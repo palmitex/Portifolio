@@ -163,7 +163,7 @@ $redesocial = [
             echo '
 
     
-                    <a href="' . $redes['link'] . '">
+                    <a href="' . $redes['link'] . '" target="_blank">
                         <img src="' . $redes['icon'] . '" alt="' . $redes['link'] . '">
                     </a>
 
