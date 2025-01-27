@@ -184,6 +184,9 @@ main {
     padding: 30px;
     text-align: center;
 }
+footer p:hover{
+    color: #39FF14;
+}
 .redes a {
     color: #fff;
     text-decoration: none;

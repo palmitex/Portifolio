@@ -108,9 +108,45 @@ h3{
     text-align: justify;
     color: #39FF14;
 }
-.competencias{
-    margin-top: 23%;
+.ferramentas{
+    margin-top: 25%;
     margin-bottom: 5%; 
+    font-size: 20px;
+    text-align: justify;
+    color: #39FF14;
+}
+.ferramentas h1{
+    margin-bottom: 30px;
+}
+.ferramentas-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-radius: 20px;
+}
+.tool {
+    background-color: #0d0d0d;
+    box-shadow: 0 4px 15px rgba(1, 226, 1, 0.945);
+    border-radius: 10px;    
+    color: #00ff00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    font-size: 1em;
+}
+.tool p {
+    margin: 15px;
+}
+.tool img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.competencias{
+    margin-top: 10%;
+    margin-bottom: 3%; 
     font-size: 20px;
     text-align: justify;
     color: #39FF14;
@@ -194,6 +230,9 @@ footer {
     padding: 30px;
     text-align: center;
 }
+footer p:hover{
+    color: #39FF14;
+}
 .redes a {
     color: #fff;
     text-decoration: none;
@@ -204,3 +243,51 @@ footer {
 }
 
 
+/* animações
+
+/* Foto (efeito de zoom) */
+.foto img {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.foto h1, .foto h2, .foto h3 {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.foto.visible img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.foto.visible h1, .foto.visible h2, .foto.visible h3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ferramentas (efeito de zoom e deslocamento) */
+.ferramentas-card .tool {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.ferramentas.visible .ferramentas-card .tool {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Formação Acadêmica */
+.texto h1, .texto p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.texto.visible h1, .texto.visible p {
+    opacity: 1;
+    transform: translateY(0);
+}

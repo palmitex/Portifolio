@@ -31,6 +31,40 @@ $infoSection = [
         "description" => "I am an organized person who knows how to plan and prioritize tasks efficiently. This allows me to manage deadlines and deliverables with quality, even in high-demand situations."
     ]
 ];
+$ferramentas = [
+    [
+        "icon" => "img/html.png",
+        "title" => "HTML"
+    ],
+    [
+        "icon" => "img/css.png",
+        "title" => "CSS"
+    ],
+    [
+        "icon" => "img/js.png",
+        "title" => "JavaScript"
+    ],
+    [
+        "icon" => "img/php.png",
+        "title" => "PHP"
+    ],
+    [
+        "icon" => "img/cisco.png",
+        "title" => "Cisco Packet Tracer"
+    ],
+    [
+        "icon" => "img/github.png",
+        "title" => "Github"
+    ],
+    [
+        "icon" => "img/vs.png",
+        "title" => "Visual Studio Code"
+    ],
+    [
+        "icon" => "img/bootstrap.png",
+        "title" => "Bootstrap"
+    ],
+    ];
 
 $redesocial = [
     [
@@ -59,7 +93,7 @@ $redesocial = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Gabriel Palmieri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -109,6 +143,19 @@ $redesocial = [
                 <h2>Developing systems is creating effective technological solutions that drive innovation and results.</h2>
                 <h3>Developing websites with focus and continuous evolution</h3>
             </section>
+            <div class="ferramentas">
+                <h1>Tools</h1>
+                <div class="ferramentas-card">
+                    <?php
+                    foreach ($ferramentas as $ferramenta) {
+                        echo '<div class="tool">';
+                        echo '<img src="' . $ferramenta['icon'] . '" alt="' . $ferramenta['title'] . '">';
+                        echo '<p>' . $ferramenta['title'] . '</p>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+            </div>
             <div class="competencias">
                 <h1>Skills</h1>
             </div>

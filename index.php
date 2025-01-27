@@ -50,6 +50,40 @@ $redesocial = [
         "link" => "https://github.com/palmitex"
     ]
 ];
+$ferramentas = [
+    [
+        "icon" => "img/html.png",
+        "title" => "HTML"
+    ],
+    [
+        "icon" => "img/css.png",
+        "title" => "CSS"
+    ],
+    [
+        "icon" => "img/js.png",
+        "title" => "JavaScript"
+    ],
+    [
+        "icon" => "img/php.png",
+        "title" => "PHP"
+    ],
+    [
+        "icon" => "img/cisco.png",
+        "title" => "Cisco Packet Tracer"
+    ],
+    [
+        "icon" => "img/github.png",
+        "title" => "Github"
+    ],
+    [
+        "icon" => "img/bootstrap.png",
+        "title" => "Bootstrap"
+    ],
+    [
+        "icon" => "img/Linux.png",
+        "title" => "Linux"
+    ]
+]
 
 ?>
 
@@ -60,7 +94,7 @@ $redesocial = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifólio - Gabriel Palmieri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -110,6 +144,19 @@ $redesocial = [
                 <h2>Desenvolver sistemas é criar soluções tecnológicas eficazes que impulsionam inovação e resultados.</h2>
                 <h3>Desenvolvendo sites com foco e evolução contínua</h3>
             </section>
+            <div class="ferramentas">
+                <h1>Ferramentas</h1>
+                <div class="ferramentas-card">
+                    <?php
+                    foreach ($ferramentas as $ferramenta) {
+                        echo '<div class="tool">';
+                        echo '<img src="' . $ferramenta['icon'] . '" alt="' . $ferramenta['title'] . '">';
+                        echo '<p>' . $ferramenta['title'] . '</p>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+            </div>
             <div class="competencias">
                 <h1>Competências</h1>
             </div>
@@ -143,7 +190,7 @@ $redesocial = [
                             Quem sou eu?
                         </h1>
                         <p>
-                            Olá me chamo Gabriel Palmieri, atualmente sou estudande de desenvolvimento de sistemas e busco atuar na área de programação como desenvolverdor full stack, aplicando minhas habilidades em desenvolvimento de soluções criativas e eficientes, enquanto continuo aprimorando meus conhecimentos para contribuir com projetos inovadores e de impacto.
+                            Me chamo Gabriel Palmieri, atualmente sou estudande de desenvolvimento de sistemas e busco atuar na área de programação como desenvolverdor full stack, aplicando minhas habilidades em desenvolvimento de soluções criativas e eficientes, enquanto continuo aprimorando meus conhecimentos para contribuir com projetos inovadores e de impacto.
                         </p>
                     </div>
                 </div>

@@ -48,7 +48,7 @@ $redesocial = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/projeto.css">
-    <title>Document</title>
+    <title>Projetos</title>
 </head>
 <body>
 <header>
@@ -92,12 +92,10 @@ $redesocial = [
     echo '<p>' . htmlspecialchars($item['text']) . '</p>';
     
     if ($index === count($data) - 1) {
-        // Apenas o último card terá o botão de download
         echo '<button class="button"> 
                 <a href="' . $item['link'] . '" download target="_blank">Baixar arquivo</a>
               </button>';
     } else {
-        // Os outros cards terão o botão "Ver mais"
         echo '<button class="button"> 
                 <a href="' . $item['link'] . '" target="_blank">Ver mais</a>
               </button>';
@@ -133,7 +131,6 @@ $redesocial = [
        </div>  
        <p>2025 ©  | Desenvolvido por Gabriel Palmieri</p>
     </footer>
-    <script>src="js/script.js"</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

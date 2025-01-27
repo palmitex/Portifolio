@@ -27,3 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // Chama a função no carregamento inicial para elementos já visíveis
     handleScroll();
 });
+// Função para adicionar a classe 'visible' quando o elemento entra na tela
+function handleScrollAnimations() {
+  const elements = document.querySelectorAll(".foto, .section, .ferramentas, .texto, footer");
+
+  elements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          element.classList.add("visible");
+      } else {
+          element.classList.remove("visible");
+      }
+  });
+}
+
+// Escuta o evento de rolagem
+window.addEventListener("scroll", handleScrollAnimations);
+
+handleScrollAnimations();
