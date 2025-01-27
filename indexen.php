@@ -57,12 +57,12 @@ $ferramentas = [
         "title" => "Github"
     ],
     [
-        "icon" => "img/vs.png",
-        "title" => "Visual Studio Code"
-    ],
-    [
         "icon" => "img/bootstrap.png",
         "title" => "Bootstrap"
+    ],
+    [
+        "icon" => "img/linux.png",
+        "title" => "Linux"
     ],
     ];
 
