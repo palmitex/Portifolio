@@ -236,9 +236,13 @@ footer p:hover{
     color: #fff;
     text-decoration: none;
     color: #39FF14;
+    
 }
 .redes{
     margin-bottom: 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 
