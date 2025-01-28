@@ -48,6 +48,7 @@ $redesocial = [
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/projeto.css">
     <link rel="stylesheet" href="css/navbarresponse.css">
+    <link rel="stylesheet" href="css/projetomobile.css">
     <title>Projects</title>
 </head>
 <body>
