@@ -177,7 +177,7 @@ $ferramentas = [
             <div class="container">
                 <div class="content">
                     <div class="image-container">
-
+                        <img src="img/eu.jpeg" alt="">
                     </div>
                     <div class="texto">
                         <h1>
