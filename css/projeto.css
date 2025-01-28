@@ -30,6 +30,9 @@ header {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .nav-link, .nav-link.dropdown-toggle{
     color: rgb(255 255 255);
 }
+.navbar-nav .dropdown-menu{
+    position: absolute;
+}
 .nav-link.active, .nav-link, .nav-link.dropdown-toggle{
     font-size: 24px;
 }

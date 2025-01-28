@@ -1,0 +1,37 @@
+
+@media (max-width: 1000px) {
+    .port h2{
+        font-size: 2.2rem;
+    }
+    .port h3{
+        padding: 0rem 3rem 0rem 0rem;
+        font-size: 1.3rem;
+    }
+    .ferramentas{
+        margin-top: 40%;
+    }
+    .ferramentas-card{
+        flex-direction: column;
+        
+    }
+    .tool{
+       width: 85%;
+    }
+    .info-section{
+        flex-direction: column; 
+    }
+    .info-block{
+        width: 90%;
+        max-width: 100%;
+        max-height: 100%;        
+    }
+    .content{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .image-container img {
+        width: 60vw;
+        height: 500px;  
+    }
+}

@@ -96,6 +96,8 @@ $redesocial = [
     <title>Portfolio - Gabriel Palmieri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homemobile.css">
+    <link rel="stylesheet" href="css/navbarresponse.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>

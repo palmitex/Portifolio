@@ -1,0 +1,91 @@
+/* homemobile.css - Estilo apenas para dispositivos móveis */
+@media (max-width: 1000px) {
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        color: #fff !important;
+    }
+
+    #navbarDropdownMenuLink {
+        margin-left: 0;
+    }
+    #navbarDropdownMenuLinken {
+        margin-left: 0;
+    }
+    /* Ajustes para o dropdown */
+    .dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown-toggle {
+        color: #fff !important;
+        cursor: pointer;
+    }
+    .dropdown-menu {
+        position: absolute; /* Alinha o menu abaixo do botão */
+        top: 100%; /* Garante que o dropdown fique logo abaixo */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: none;
+        z-index: 1000; /* Garante que o dropdown apareça acima de outros elementos */
+        margin-top: 5px; /* Espaço entre o botão e o menu */
+        padding: 0;
+    }
+
+    .dropdown-item {
+        color: #fff !important;
+        font-size: 18px;
+        padding: 10px 15px;
+        text-align: left;
+    }
+    .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+     }
+     @media  (min-width: 1001px) and (max-width: 1280px) {
+        #navbarDropdownMenuLink{
+            margin-left: 30vw;
+            display: flex;
+        }
+        #navbarDropdownMenuLinken{
+            margin-left: 35vw;
+            display: flex;
+        }
+    }
+    @media (min-width: 1281px) and (max-width: 1500px) {
+        #navbarDropdownMenuLinken{
+            margin-left: 40vw;
+            display: flex;
+        }
+        #navbarDropdownMenuLink{
+            margin-left: 40vw;
+            display: flex;
+        }
+        #navbarDropdownMenuLinken{
+            margin-left: 43vw;
+            display: flex;
+        }
+    }
