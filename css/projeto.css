@@ -197,6 +197,9 @@ footer p:hover{
 }
 .redes{
     margin-bottom: 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
 }
 /* Animação de fade-in */
 @keyframes fadeIn {

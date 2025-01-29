@@ -98,6 +98,7 @@ $redesocial = [
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/homemobile.css">
     <link rel="stylesheet" href="css/navbarresponse.css">
+    <link rel="shortcut icon" href="img/gp.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>

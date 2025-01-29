@@ -49,6 +49,7 @@ $redesocial = [
     <link rel="stylesheet" href="css/projeto.css">
     <link rel="stylesheet" href="css/navbarresponse.css">
     <link rel="stylesheet" href="css/projetomobile.css">
+    <link rel="shortcut icon" href="img/gp.png" type="image/x-icon">
     <title>Projects</title>
 </head>
 <body>
